@@ -11,4 +11,9 @@
 <br><br>
 <p *ngIf="age>18">Bạn đã già</p>
 <p *ngIf="age<=18">Bạn còn trẻ</p>
+<br>
+<input type="text" [(ngModel)]="name"/>
+<p>xin chào {{name}}</p>
+<br>
+<button (click)="resetName()"> Reset name</button>
 </div>
