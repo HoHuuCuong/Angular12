@@ -1,3 +1,16 @@
 .home{
+    width: 200px;
+    border-width: 2px;        /* Độ dày của viền */
+    border-style: solid;      /* Kiểu của viền */
+    border-color: #ff0000;    /* Màu sắc của viền */
+    border-radius: 10px;
+    color: red;
+}
+.abc{
+    width: 200px;
+    border-width: 2px;        /* Độ dày của viền */
+    border-style: solid;      /* Kiểu của viền */
+    border-color:black;    /* Màu sắc của viền */
+    border-radius: 10px;
     color: red;;
 }

@@ -16,4 +16,18 @@
 <p>xin chào {{name}}</p>
 <br>
 <button (click)="resetName()"> Reset name</button>
+
+</div>
+<br><br>
+<div class="abc">
+    <br>
+    <input [(ngModel)]="age"/>
+    <!-- <p *ngIf="age<=18">Bạn còn trẻ</p>
+    <p *ngIf="age>18">Bạn đã già</p>
+        Cach lam khac
+-->
+        <div *ngIf="age<=18; then tre; else gia"></div>
+            <ng-template #tre><p>Bạn còn trẻ</p></ng-template>
+            <ng-template #gia><p>Bạn đã già</p></ng-template>
+
 </div>
