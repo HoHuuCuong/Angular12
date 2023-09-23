@@ -1,4 +1,11 @@
 <div class="home">
 <p>đây là component home!</p>
 <h3> My name is {{name}}</h3>
+<input value="{{name}}">
+<br>
+<input [value]="name">
+<br>
+<input value="{{name}}" title="day la {{name}}"/>
+<br>
+<input [value]="name" [title]="'day la '+ name "/>
 </div>
