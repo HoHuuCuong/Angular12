@@ -8,4 +8,7 @@
 <input value="{{name}}" title="day la {{name}}"/>
 <br>
 <input [value]="name" [title]="'day la '+ name "/>
+<br><br>
+<p *ngIf="age>18">Bạn đã già</p>
+<p *ngIf="age<=18">Bạn còn trẻ</p>
 </div>
