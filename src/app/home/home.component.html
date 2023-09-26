@@ -60,3 +60,17 @@
     </tr>
   </table>
 </div>
+<br>
+<div class="ghk">
+    <label>Chọn thành phố</label>
+  <select  id="city" (change)="changeCity($event)">
+    <option>Chọn thành phố</option>
+      <option *ngFor="let data of VietNamData" value="{{data.city}}">{{data.city}}</option>
+    </select>
+    <br>
+    <label>Chọn quận huyện</label>
+    <select  id="district">
+        <option>Chọn quận huyện</option>
+        <option *ngFor="let data of districts" >{{data}}</option>
+      </select>
+</div>
