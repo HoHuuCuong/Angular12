@@ -1,2 +1,11 @@
 Hello world
-<app-home></app-home>
+<!-- <app-home></app-home> -->
+<h1>Angular 12</h1>
+<nav>
+  <ul>
+    <li><a routerLink="/home" routerLinkActive="active" >homeComponent</a></li>
+    <li><a routerLink="/about" routerLinkActive="active" >aboutComponent</a></li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
