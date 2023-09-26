@@ -29,5 +29,11 @@
         <div *ngIf="age<=18; then tre; else gia"></div>
             <ng-template #tre><p>Bạn còn trẻ</p></ng-template>
             <ng-template #gia><p>Bạn đã già</p></ng-template>
-
+</div>
+<br><br>
+<div class="def">
+<h3>Trái cây</h3>
+<div *ngFor="let trai of traicay; let i = index">
+    <li>{{ i+1 }}. {{trai}}</li>
+</div>
 </div>
