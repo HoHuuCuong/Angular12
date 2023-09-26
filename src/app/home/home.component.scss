@@ -1,5 +1,5 @@
 .home{
-    width: 200px;
+    width: 400px;
     border-width: 2px;        /* Độ dày của viền */
     border-style: solid;      /* Kiểu của viền */
     border-color: #ff0000;    /* Màu sắc của viền */
@@ -7,7 +7,7 @@
     color: red;
 }
 .abc{
-    width: 200px;
+    width: 400px;
     border-width: 2px;        /* Độ dày của viền */
     border-style: solid;      /* Kiểu của viền */
     border-color:black;    /* Màu sắc của viền */
@@ -15,9 +15,20 @@
     color: red;;
 }
 .def{
-    width: 200px;
+    width: 400px;
     border-width: 2px;        /* Độ dày của viền */
     border-style: solid;      /* Kiểu của viền */
     border-color:black;    /* Màu sắc của viền */
     border-radius: 10px;
+}
+.table ,th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+
+  }
+  th{
+    min-width:  50px;
+  }
+.so-am{
+    color: red;
 }

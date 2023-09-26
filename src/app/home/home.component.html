@@ -36,4 +36,23 @@
 <div *ngFor="let trai of traicay; let i = index">
     <li>{{ i+1 }}. {{trai}}</li>
 </div>
+<br>
+<table class="table">
+    <tr>
+      <th>STT</th>
+      <th>Tên</th>
+      <th>Giá</th>
+      <th>Hạ Giá</th>
+    </tr>
+    <tr *ngFor="let trai of traicay2;let i =index">
+      <td>{{i+1}}</td>
+      <td>{{trai.ten}}</td>
+      <td [ngClass]="{'so-am' : trai.gia < 0}">{{trai.gia}}</td>
+     <td [ngClass]="{'so-am': trai.haGia==1}">
+      <div *ngIf="trai.haGia==1; then co; else khong" ></div>
+      <ng-template #co><p>Có</p></ng-template>
+      <ng-template #khong ><p >Không</p></ng-template>
+    </td>
+    </tr>
+  </table>
 </div>

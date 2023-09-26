@@ -9,6 +9,11 @@ export class HomeComponent implements OnInit {
   public name='Cuong'
   public age =19;
   public traicay=["Táo","Xoài","Ổi","Nho"];
+  public traicay2=[
+      {ten:'Táo', gia:12,haGia:1},
+      { ten:'Ổi', gia:13,haGia:0 },
+      { ten:'Xoài', gia:-2,haGia:1 }
+    ];
   constructor() { }
 
   ngOnInit(): void {
