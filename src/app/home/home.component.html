@@ -43,15 +43,19 @@
       <th>Tên</th>
       <th>Giá</th>
       <th>Hạ Giá</th>
+      <th>Pipe</th>
     </tr>
     <tr *ngFor="let trai of traicay2;let i =index">
       <td>{{i+1}}</td>
-      <td>{{trai.ten}}</td>
-      <td [ngClass]="{'so-am' : trai.gia < 0}">{{trai.gia}}</td>
+      <td>{{trai.ten | uppercase}}</td>
+      <td [ngClass]="{'so-am' : trai.gia < 0}">{{trai.gia | currency:'VND'}}</td>
      <td [ngClass]="{'so-am': trai.haGia==1}">
       <div *ngIf="trai.haGia==1; then co; else khong" ></div>
       <ng-template #co><p>Có</p></ng-template>
       <ng-template #khong ><p >Không</p></ng-template>
+    </td>
+    <td>
+        <span>{{trai.pipe | pipe | uppercase}}</span>
     </td>
     </tr>
   </table>
