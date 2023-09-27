@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { PipePipe } from './pipe.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HighlightDirective } from './Directives/highlight.directive';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HighlightDirective } from './Directives/highlight.directive';
     AboutComponent,
     PipePipe,
     PageNotFoundComponent,
-    HighlightDirective
+    HighlightDirective,
+    FormComponent
   ],
   imports: [
     BrowserModule,

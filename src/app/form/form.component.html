@@ -1,0 +1,8 @@
+<p>form works!</p>
+<form (ngSubmit)="submitForm()">
+    <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone:true}"/>
+    <input type="number" [(ngModel)]="age" [ngModelOptions]="{standalone:true}"/>
+    <!-- <button (click)="submitForm()">Submit</button> -->
+    <button>Submit</button>
+
+</form>
