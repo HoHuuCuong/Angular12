@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FormComponent } from './drivenfForm/form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { GetDataComponent } from './get-data/get-data.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'drivenform', component: FormComponent },
   { path: 'reactiveform', component: ReactiveFormComponent },
   { path: 'getdata', component: GetDataComponent },
+  { path: 'postdata', component: PostDataComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

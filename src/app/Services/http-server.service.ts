@@ -15,11 +15,16 @@ export class HttpServerService {
 };
   constructor( private httpClient: HttpClient) { }
   public getComments():Observable<any>{
-    const url= this.REST_API_SERVER+'/post';
+    const url= this.REST_API_SERVER+'/comments';
     return this.httpClient.get<any>(url,this.httpOptions);
   }
   public getUser(user: number):Observable<any>{
     const url= this.REST_API_SERVER_RANDOM+user;
     return this.httpClient.get<any>(url,this.httpOptions);
+  }
+  public postComments(payload:any):Observable<any>{
+    const url= this.REST_API_SERVER+'/comments';
+    console.log("payload",payload);
+    return this.httpClient.post<any>(url,payload,this.httpOptions);
   }
 }
