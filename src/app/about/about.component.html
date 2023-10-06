@@ -15,3 +15,9 @@
 <br/>
 <span> counter: {{counter}}</span>
 <span> counter^2: {{binhPhuong}}</span>
+
+<div>
+    <p >QR  code</p>
+    <input type="text" (change)='change($event)'><br>
+    <qr-code [value]="qrInfo" [size]="150"></qr-code>
+</div>
